@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colllege site</title>
+    <!-- font awesom cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- custom css link  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+
+            <a href="#"> <img src="images/logo rk.jpg" alt="logo of rkmission" class="logo"></a>
+            <p class="logo-text">RKMHSS</p>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+
+                    <li><a href="#"  onclick="hideMenu()">HOME</a></li>
+                    <li><a href="#" onclick="hideMenu()">ABOUT</a></li>
+                    <li><a href="#" onclick="hideMenu()">COURSE</a></li>
+                    <li><a href="#" onclick="hideMenu()">BLOG</a></li>
+                    <li><a href="#" onclick="hideMenu()">CONTACT</a></li>
+
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" id="menu" onclick="shoMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+
+            <h1>World's Best school</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni exercitationem sit magnam odio quibusdam ab rem, <br> animi autem natus quas maxime obcaecati fugit earum maiores molestiae illo, temporibus nam ea?</p>
+            <a href="#" class="btn">visit us know more</a>
+
+        </div>
+    </header>
+
+
+
+
+
+
+<!-- javascript for toggle menu  -->
+    <script >
+
+        var navLinks = document.getElementById("navLinks");
+        var menu = document.getElementById("menu");
+
+        function shoMenu(){
+
+            navLinks.style.left = "0";
+            menu.style.display = "none";
+
+
+        }
+
+        function hideMenu(){
+
+          navLinks.style.left = "-130%";
+          menu.style.display = "block";
+
+        }
+
+
+    </script>
+</body>
+</html>
