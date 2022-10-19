@@ -375,7 +375,10 @@ padding-top: 6.25rem;
     .campus-col{
         margin-right: 20px;
     }
-    
+    .facilites{
+       width: 100%;
+       padding-right: 2rem;
+    }
     
 }
 @media(max-width:400px){
